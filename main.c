@@ -101,6 +101,9 @@ int main(int argc, char const *argv[]) {
      function and its derivative (the Jacobian matrix) */
     eps = 1.0;
     for (i = 0; i < domain_dim; i++) {
+        /* The input read by scanf should be real numbers the user should never 
+        deal directly with complex numbers for they are just part of the inner
+        workings of the program (the %lf is a format for real numbers) */
         scanf( "%lf", &input_aux );
         input_values[i] = input_aux;
         
